@@ -106,7 +106,7 @@ fun RecipeScreen(db: AppDatabase, navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        Divider()
+        HorizontalDivider()
 
         Spacer(modifier = Modifier.height(8.dp))
 
@@ -362,7 +362,7 @@ fun RecipeDetailScreen(
                 modifier = Modifier
                     .fillMaxSize()
                     .verticalScroll(rememberScrollState())
-                    .padding(bottom = 72.dp) // zostaw miejsce na dolny pasek
+                    .padding(bottom = 72.dp)
                     .padding(16.dp)
             ) {
                 Text(
@@ -423,7 +423,7 @@ fun RecipeDetailScreen(
             }
         }
 
-        // Dolny pasek z przyciskami
+
         Row(
             modifier = Modifier
                 .align(Alignment.BottomCenter)
